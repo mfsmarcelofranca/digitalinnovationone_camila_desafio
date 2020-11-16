@@ -16,11 +16,13 @@ Este passo 6, não é obrigatório, mas entrará como um diferencial.
 **Resumo:**
 
 **Uma página simulando um jogo que gera um número aleatório onde o jogador tem que adivinhar**
-!["imagem do jogo"](img/jogo.jpg)
-# •	Tela inicial de cadastro:  
+
+# •	Tela inicial de cadastro:
+!["imagem do jogo"](/src/assets/img/cadastro.JPG)
      o	solicita o cadastro de 2 jogadores
      o	Um botão para iniciar o jogo: link para página do jogo passando os nomes dos jogadores
 # •	Tela do jogo:
+!["imagem do jogo"](/src/assets/img/jogo.JPG)
      o	Gera um número aleatório entre 1 e 3
      o	Solicita o palpite do jogador (alternado entre os dois jogadores)
      o	Compara o número gerado e exibe a informação de acerto ou erro
