@@ -30,60 +30,60 @@ Este passo 6, não é obrigatório, mas entrará como um diferencial.
      o	Informações sobre o jogo e um link para tela de cadastro.
      
 # Implementação:
-     •	Criação do projeto com rotas:
-          o	ng new desafio –routing –prefix=desafio
-          o	Foi adicionado o @angular/material
-               	ng add @angular/material
-          o	Foi instalado o bootstrap
-               	npm install bootstrap
-               	incluída a importação do css do bootstrap no arquivo:  angular.json
-     •	Criação dos componentes:
-          o	cadastro: 
-               	ng g c jogo/cadasto
-               	Adicionado o componentes do @angular/material:
-                    •	MatInputModulo -> input para entrada dos nomes dos jogadores
-               	Adicionado no html um modelo de card no bootstrap
-               	Data Binding:
-                    •	Two-Way -> armazena os nomes dos 2 jogadores digitados nas variáveis (jogador1 e jogador2)
-                    •	Property Binding -> inclui o nome dos jogadores na tag href (link para tela do jogo passando 2 parâmetros – nomes dos jogadores)
-               	Diretivas:
-                    •	*ngIf -> usa a variável jogoPronto para mostrar/ocultar botões de confirmação de cadastro e iniciar jogo
-               	Event Binding:
-                    •	evento click -> chama o método: confirmarCadastro()
-          o	números-aleatórios:
-               	ng g c jogo/números-aleatorio
-               	Adicionado o componente do @angular/material:
-                    •	MatProgressBarModule -> exibe uma barra de progresso simulando a geração do número aleatório
-          o	resultado:
-               	ng g c jogo/resultado
-               	Adicionado o componente do @angular/material:
-                    •	MatGridListModule -> exibe um grid com os nomes dos jogadores e número de acertos e erros
-               	Adicionado um Spinner do bootstrap para indicar de qual jogador é a vez de jogar
-                    •	Diretivas:
-                         o	*ngIf -> testa qual jogador está jogando para exibir o spinner 
-               	@Input()
-                    •	Adicionado para receber os dados dos jogadores vindos da tela do jogo (jogo.component)
-               	Data Binding:
-                    •	Interpolação  -> para exibir dados dos jogadores na tela
-          o	descrição:
-               	ng g c jogo/descrição
-          o	jogo:
-               	ng c jogo/jogo
-               	Lógica:
+     • Criação do projeto com rotas:
+          -> ng new desafio –routing –prefix=desafio
+          -> Foi adicionado o @angular/material
+               -> ng add @angular/material
+          -> Foi instalado o bootstrap
+               -> npm install bootstrap
+                    -> incluída a importação do css do bootstrap no arquivo:  angular.json
+     • Criação dos componentes:
+          • cadastro: 
+               -> ng g c jogo/cadasto
+               -> Adicionado o componentes do @angular/material:
+                    -> MatInputModulo -> input para entrada dos nomes dos jogadores
+               -> Adicionado no html um modelo de card no bootstrap
+               -> Data Binding:
+                    -> Two-Way -> armazena os nomes dos 2 jogadores digitados nas variáveis (jogador1 e jogador2)
+                    -> Property Binding -> inclui o nome dos jogadores na tag href (link para tela do jogo passando 2 parâmetros – nomes dos jogadores)
+               -> Diretivas:
+                    -> *ngIf -> usa a variável jogoPronto para mostrar/ocultar botões de confirmação de cadastro e iniciar jogo
+               -> Event Binding:
+                    -> evento click -> chama o método: confirmarCadastro()
+          • números-aleatórios:
+               -> ng g c jogo/números-aleatorio
+               -> Adicionado o componente do @angular/material:
+                    -> MatProgressBarModule -> exibe uma barra de progresso simulando a geração do número aleatório
+          • resultado:
+               -> ng g c jogo/resultado
+               -> Adicionado o componente do @angular/material:
+                    -> MatGridListModule -> exibe um grid com os nomes dos jogadores e número de acertos e erros
+               -> Adicionado um Spinner do bootstrap para indicar de qual jogador é a vez de jogar
+                    -> Diretivas:
+                         -> *ngIf -> testa qual jogador está jogando para exibir o spinner 
+               -> @Input()
+                    -> Adicionado para receber os dados dos jogadores vindos da tela do jogo (jogo.component)
+               -> Data Binding:
+                    -> Interpolação  -> para exibir dados dos jogadores na tela
+          • descrição:
+               -> ng g c jogo/descrição
+          • jogo:
+               -> ng c jogo/jogo
+               -> Lógica:
                     •	Recebe os parâmetros da rota cadastro -> (ngOnInit())
                     •	Inicia jogo solicitando entrada: palpite do 1º. jogador
                     •	Gera número aleatório
                     •	Metódo confirmarNumero() :  compara número gerado com palpite do jogador e registra as informações de acertos e erros -> exibindo resultado no template
                     •	Metódo trocaJogador(): reseta variáveis e alterna jogadores
-               	Adicionado o componente do @angular/material:
-                    •	MatMenuModule -> exibe um Menu com links para tela de cadastro e descrição
-               	Adicionado no html um modelo de grid do bootstrap
-               	Data Binding:
-                    •	Interpolação  -> para enviar dados para o template
-                    •	Two-Way -> para receber e enviar dados do template
-               	Diretivas:
-                    •	*ngIf -> para ocultar/exibir tags html de acordo com o valor da variável testada
-               	Event Binding:
-                    •	evento click -> para chamar métodos (confirmarNumero() e trocaJogador())
+               -> Adicionado o componente do @angular/material:
+                    -> MatMenuModule -> exibe um Menu com links para tela de cadastro e descrição
+               -> Adicionado no html um modelo de grid do bootstrap
+               -> Data Binding:
+                    -> Interpolação  -> para enviar dados para o template
+                    -> Two-Way -> para receber e enviar dados do template
+               -> Diretivas:
+                    -> *ngIf -> para ocultar/exibir tags html de acordo com o valor da variável testada
+               -> Event Binding:
+                    -> evento click -> para chamar métodos (confirmarNumero() e trocaJogador())
 
 
