@@ -1,0 +1,38 @@
+<mat-grid-list cols="2" rowHeight="2:1">
+  <mat-grid-tile>
+      <div *ngIf="jogador == jogador1" class="spinner-grow text-success" role="status">
+        <span class="sr-only">Loading...</span>
+      </div>
+      <div class="card">
+        <div class="card-body">
+         <h1>{{jogador1}}</h1>
+        </div>
+      </div>
+  </mat-grid-tile>
+  <mat-grid-tile>
+    <div *ngIf="jogador == jogador2" class="spinner-grow text-success" role="status">
+      <span class="sr-only">Loading...</span>
+    </div>
+    <div class="card">
+      <div class="card-body">
+       <h1>{{jogador2}}</h1>
+      </div>
+    </div>
+  </mat-grid-tile>
+  <mat-grid-tile>
+    <div class="alert alert-success" role="alert">
+      <h1>Acertos: {{acertosJogador1}}</h1>
+    </div>
+    <div class="alert alert-danger" role="alert">
+      <h1>Erros: {{errosJogador1}}</h1>
+    </div>
+  </mat-grid-tile>
+  <mat-grid-tile>
+    <div class="alert alert-success" role="alert">
+      <h1>Acertos: {{acertosJogador2}}</h1>
+    </div>
+    <div class="alert alert-danger" role="alert">
+      <h1>Erros: {{errosJogador2}}</h1>
+    </div>
+  </mat-grid-tile>
+</mat-grid-list>

@@ -1,0 +1,29 @@
+<div class="container">
+  <div class="card text-center">
+    <div class="card-header">
+      <h1>Tela de cadastro</h1>
+    </div>
+    <div class="card-body">
+      <h5 class="card-title">Defina os jogadores</h5>
+      <form class="example-form">
+        <mat-form-field class="example-full-width">
+          <mat-label>Jogador 1</mat-label>
+          <input matInput name="jogador1" placeholder="Nome" [(ngModel)]="jogador1">
+        </mat-form-field>
+        <br />
+        <mat-form-field class="example-full-width">
+          <mat-label>Jogador 2</mat-label>
+          <input matInput name="jogador2" placeholder="Nome" [(ngModel)]="jogador2">
+        </mat-form-field>
+      </form>
+      <button *ngIf="!jogoPronto" type="button" class="btn btn-primary" (click)="confirmarCadastro()">Confirmar cadastro</button>
+      <div *ngIf="jogoPronto">
+        <a [href]="rotaJogo" class="btn btn-success">Iniciar jogo</a>
+      </div>
+
+    </div>
+    <div class="card-footer text-muted">
+      {{mensagemCadastro}}
+    </div>
+  </div>
+</div>

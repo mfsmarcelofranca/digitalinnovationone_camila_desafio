@@ -1,0 +1,55 @@
+<div class="container">
+  <!-- #docregion mat-menu-trigger-for -->
+<button mat-button [matMenuTriggerFor]="menu">Menu</button>
+<!-- #enddocregion mat-menu-trigger-for -->
+<mat-menu #menu="matMenu">
+  <a href="/cadastro" class="btn btn-primary">Cadastro</a>
+  <a href="/descricao" class="btn btn-primary">Descricao</a>
+</mat-menu>
+<div class="container">
+  <div class="row">
+    <div class="col-sm bordaSolid">
+     <h1>Adivinhe o número entre 1 e 3</h1>
+     <h3>Jogador: {{jogador}}</h3><br>
+     <div class="input-group mb-3">
+
+      <input type="text" class="form-control" placeholder="Digite um número" [(ngModel)]="numeroDigitado">
+      <div class="input-group-append">
+        <button *ngIf="proximoJogador" class="btn btn-primary" type="button" (click)=trocaJogador()>Proximo Jogador</button>
+        <button *ngIf="!proximoJogador" class="btn btn-success" type="button" (click)=confirmarNumero()>Confirmar</button>
+      </div>
+    </div>
+    </div>
+    <div class="col-sm bordaSolid">
+      <desafio-numeros-aleatorios></desafio-numeros-aleatorios>
+      <div class="row">
+        <div class="col-sm bordaSolid">
+           Número digitado<br>
+          <button type="button" [(class)]="btnNumeroDigitado">{{numeroDigitado}}</button>
+        </div>
+        <div class="col-sm bordaSolid">
+          Número resultado<br>
+          <button type="button" [(class)]="btnResultado">{{numeroResultado}}</button>
+        </div>
+      </div>
+      <div *ngIf="acertou" class="alert alert-success" role="alert">
+        Parabéns ! Você acertou !
+      </div>
+      <div *ngIf="errou" class="alert alert-danger" role="alert">
+        Você errou !
+      </div>
+    </div>
+  </div>
+  <div class="container bordaSolid">
+<desafio-resultado
+[jogador1] = "jogador1"
+[jogador2] = "jogador2"
+[acertosJogador1] = "acertosJogador1"
+[acertosJogador2] = "acertosJogador2"
+[errosJogador1] = "errosJogador1"
+[errosJogador2] = "errosJogador2"
+[jogador] = "jogador"
+></desafio-resultado>
+  </div>
+</div>
+</div>
