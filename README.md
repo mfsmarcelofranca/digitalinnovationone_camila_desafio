@@ -13,9 +13,9 @@ Este passo 6, não é obrigatório, mas entrará como um diferencial.
 
 # Descrição do projeto realizado:
 
-# Resumo: 
+**Resumo: 
 
-# Uma página simulando um jogo que gera um número aleatório onde o jogador tem que adivinhar
+**Uma página simulando um jogo que gera um número aleatório onde o jogador tem que adivinhar
 
 # •	Tela inicial de cadastro:  
      o	solicita o cadastro de 2 jogadores
