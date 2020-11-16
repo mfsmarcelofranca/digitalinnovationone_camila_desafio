@@ -16,7 +16,7 @@ Este passo 6, não é obrigatório, mas entrará como um diferencial.
 **Resumo:**
 
 **Uma página simulando um jogo que gera um número aleatório onde o jogador tem que adivinhar**
-
+!["Tela do jogo"](http:
 # •	Tela inicial de cadastro:  
      o	solicita o cadastro de 2 jogadores
      o	Um botão para iniciar o jogo: link para página do jogo passando os nomes dos jogadores
