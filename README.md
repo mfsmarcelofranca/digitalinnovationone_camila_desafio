@@ -47,7 +47,8 @@ Este passo 6, não é obrigatório, mas entrará como um diferencial.
                -> Adicionado no html um modelo de card no bootstrap
                -> Data Binding:
                     -> Two-Way -> armazena os nomes dos 2 jogadores digitados nas variáveis (jogador1 e jogador2)
-                    -> Property Binding -> inclui o nome dos jogadores na tag href (link para tela do jogo passando 2 parâmetros – nomes dos jogadores)
+                    -> Property Binding -> inclui o nome dos jogadores na tag href (link para tela do
+                       jogo passando 2 parâmetros – nomes dos jogadores)
                -> Diretivas:
                     -> *ngIf -> usa a variável jogoPronto para mostrar/ocultar botões de confirmação de cadastro e iniciar jogo
                -> Event Binding:
@@ -75,7 +76,8 @@ Este passo 6, não é obrigatório, mas entrará como um diferencial.
                     •	Recebe os parâmetros da rota cadastro -> (ngOnInit())
                     •	Inicia jogo solicitando entrada: palpite do 1º. jogador
                     •	Gera número aleatório
-                    •	Metódo confirmarNumero() :  compara número gerado com palpite do jogador e registra as informações de acertos e erros -> exibindo resultado no template
+                    •	Metódo confirmarNumero() :  compara número gerado com palpite do jogador e registra
+                      as informações de acertos e erros -> exibindo resultado no template
                     •	Metódo trocaJogador(): reseta variáveis e alterna jogadores
                -> Adicionado o componente do @angular/material:
                     -> MatMenuModule -> exibe um Menu com links para tela de cadastro e descrição
