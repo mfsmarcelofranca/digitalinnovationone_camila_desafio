@@ -24,7 +24,7 @@ Este passo 6, não é obrigatório, mas entrará como um diferencial.
 # •	Tela do jogo:
 !["imagem do jogo"](/src/assets/img/jogo.JPG)
      Gera um número aleatório entre 1 e 3   
-     Solicita o palpite do jogador (alternado entre os dois jogadores)   
+     Solicita o palpite do jogador (alternando entre os dois jogadores)   
      Compara o número gerado e exibe a informação de acerto ou erro   
      Exibe o número de acertos e erros dos dois jogadores   
      Possui um menu para Tela de cadastro e Tela com a descrição do jogo   
